@@ -113,7 +113,7 @@ def update_ticket_to_processed(mysql_conn, mysql_cursor, ticket_id):
 def insert_transactions(sqlserver_conn, user_id, status_miles, bonus_miles):
 
     now = datetime.datetime.now()
-    transaction_type_credit = 0
+    transaction_type_credit = 1
 
     if status_miles > 0:
         miles_type_status = 1
